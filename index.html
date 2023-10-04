@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advice App</title>
+</head>
+<body>
+    <div id="root">
+        <h1>Random Advice Generator</h1>
+        <button id="getAdviceButton">Get Advice</button>
+        <p id="adviceText"></p>
+    </div>
+
+    <script>
+        async function getAdvice() {
+            const res = await fetch("https://api.adviceslip.com/advice");
+            const data = await res.json();
+            const advice = data.slip.advice;
+            document.getElementById("adviceText").textContent = advice;
+        }
+
+        document.getElementById("getAdviceButton").addEventListener("click", getAdvice);
+    </script>
+</body>
+</html>
