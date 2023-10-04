@@ -1,6 +1,6 @@
 # Random Advice Generator
 
-This is a simple web application that generates random pieces of advice from an external API when the user clicks a button. Additionally, there is a JavaScript version of the same functionality included in a separate JavaScript file.
+This is a simple web applications that generates random pieces of advice from an external API when the user clicks a button. Additionally, there is a JavaScript version of the same functionality included in a separate JavaScript file.
 
 ## Features
 
